@@ -40,11 +40,11 @@ server.get('/protected', authenticate, (req, res) => {
 });
 
 //listen ro port
-const PORT = 3001;
-server.listen(PORT, () => {
-    console.log(`This server listening on port: #${PORT}`);
+// const PORT = 3001;
+server.listen(process.env.PORT, () => {
+    console.log(`This server listening on port: #${process.env.PORT}`);
 })
-// server.listen(process.env.PORT, () => {
-//     console.log(`This server listening on port: #${process.env.PORT}`);
+// server.listen(PORT, () => {
+//     console.log(`This server listening on port: #${PORT}`);
 // })
 
